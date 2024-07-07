@@ -262,7 +262,7 @@ img{
 
 /* Active link */
 .active-link{
-    color: var(--first-color);
+   color: hsl(0deg 92.38% 47.96%);
 }
 
 /* Change background header */
