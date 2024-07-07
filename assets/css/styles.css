@@ -934,7 +934,7 @@ img{
 }
 
 .footer__bg{
-    background-color:var(--first-color-second);
+   background-color: hsl(0deg 30% 8%);
     padding: 2rem 0 3rem;
 }
 
