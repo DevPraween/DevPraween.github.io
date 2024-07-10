@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+    margin: 0;
+}
+.Nav-bar {
+         display: flex;
+         gap: 50px;
+         justify-content: space-evenly;
+         align-items: center;
+         color: white;
+         font-family:  Kanit;
+         padding: 14px;
+}
+.nav-menu {
+    display: flex;
+    gap: 50px;
+}
+.coffe-nav-Search img {
+    width: 36px;
+    height: 36px;
+}
+.coffe-nav-menu {
+    display: flex;
+    gap: 50px;
+}
+
+.cofee-hero{
+    background-image: url(hero\ 2.jpg);
+    height: 100dvh;
+}
+.cofee-hero-section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    max-width: 1440px;
+    width: 90%;
+    margin: auto;
+    font-size: 35px;
+    font-family: nato ;
+}
+.cofee-hero-section p {
+    padding: 9px 0px;
+}
+h3 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+@font-face {
+    font-family: Kanit;
+    src: url(Kanit-Bold.ttf);
+}
+@font-face {
+    font-family:nato ;
+    src: url(Kanit-Medium.ttf);
+}
+
+.cofee-hro-btn {
+    color: black;
+    background: white;
+    width: 111px;
+    height: 31px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.img-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 17px 0px;
+    background-color: antiquewhite;
+}
+.cofee-one {
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+}
+.cofee-one img {
+    width: 50px;
+}
+@font-face {
+    font-family:regular ;
+    src: url(NotoSerif_Condensed-Regular.ttf);
+}
+.cofee-icons{
+    font-family: regular;
+}
+.special-cardcontainer {
+    gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 27px;
+}
+
+.special-carditeam {
+    background-color: #faebd78f;
+}
+.special-carditeam img {
+    width: 100%;
+    border-radius: 10px;
+}
+.specialbtnwrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.special-btn {
+    background: black;
+    color: white;
+    width: 94px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+.special-cofee h1 {
+    text-align: center;
+    padding: 42px;
+}
+@font-face {
+    font-family:semibold ;
+    src: url(Kanit-SemiBold.ttf);
+}
+.special-cofee{
+    font-family:semibold ;
+}
+.new-cofees{
+    font-family:semibold ;
+}
+
+.our-specialdesert h1 {
+    text-align: center;
+    padding: 42px;
+}
+.our-speciadesert-cardcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 27px;
+}
+.desert-carditeam {
+    background-color: #faebd78f;
+}
+.desert-carditeam img {
+    width: 100%;
+    border-radius: 10px;
+}
+.cofee-beans{
+    background-image: url(pexels-polina-tankilevitch-4109748.jpg);
+}
+@font-face {
+    font-family:satisfy ;
+    src: url(Satisfy-Regular.ttf);
+}
+.reviews h4 {
+    font-family: satisfy;
+}
+.review-one {
+    text-align: center;
+}
+.reviews-cardcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    font-family: 'regular';
+    padding: 27px;
+    align-items: baseline;
+}
+.review-carditeam {
+    display: grid;
+    gap: 20px;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+.card-img {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.review-carditeam img {
+    width: 50px;
+    border-radius: 20px;
+}
+.review-one h1 {
+    font-family: 'regular';
+}
+.footer-section {
+    padding: 23px 0px;
+    background: linear-gradient(165deg, #e7941a, #e7941a, #e7941a);
+    font-family: 'semibold';
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 50px;
+}
+.foter-logo {
+    font-size: 29px;
+}
+th {
+    padding: 6px 20px;
+}
+td {
+    padding: 5px 20px;
+    text-align: center;
+}
+td img {
+    width: 20px;
+}
+.cofee-beans {
+    background-image: url(pexels-polina-tankilevitch-4109748.jpg);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    flex-direction: column;
+    color: white;
+    font-family: 'Kanit';
+}
+.beans-btn span {
+    height: 50px;
+    background: black;
+    width: 149px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+}
+.dicrip-sec {
+    padding: 14px;
+}
+
+@media(max-width:500px){
+.cofee-hero {
+    width: 100%;
+    background-position: top;
+    
+}
+.special-cardcontainer {
+    grid-template-columns: 1fr;
+}
+
+.our-speciadesert-cardcontainer {
+    grid-template-columns: 1fr;
+}
+
+.reviews-cardcontainer {
+    grid-template-columns: 1fr;
+}
+
+
+
+}
+    </style>
+</head>
+<body>
+    <div class="cofee-hero">
+        <div class="Nav-bar">
+            <div class="nav-logo">
+                <span>COFFEE</span>
+            </div>
+    
+            <div class="coffe-nav-menu">
+                <div class="menu-iteams">HOME</div>
+                <div class="menu-iteams">COFEE</div>
+                <div class="menu-iteams">BAKERY</div>
+                <div class="menu-iteams">SHOP</div>
+                <div class="menu-iteams">ABOUT</div>
+                <div class="menu-iteams">LOGIN</div>
+            </div>
+    
+            <div class="coffe-nav-Search">
+                <img src="icons8-search-30.png" alt="">
+            </div>
+    
+        </div>
+
+        <div class="cofee-hero-section">
+            
+                 <h3>Welcome</h3>
+            <p>We serve the richest cofee <br>
+            in the city</p>
+            
+           
+
+            <div class="cofee-hro-btn">
+                <span>Open now</span>
+            </div>
+
+        </div>
+
+
+    </div>
+    
+    <div class="cofee-icons">
+        <div class="img-wrapper">
+
+        <div class="cofee-one">
+            <img src="cup-of-hot-chocolate.png" alt="">
+        <p>Hot cofee</p>
+        </div>
+
+        <div class="cofee-one">
+            <img src="iced-coffee.png" alt="">
+        <p>Cold cofee</p>
+        </div>
+
+        <div class="cofee-one">
+            <img src="coffee-cup.png" alt="">
+        <p>Cup cofee</p>
+        </div>
+
+
+        <div class="cofee-one">
+            <img src="cake.png" alt="">
+        <p>Dessert</p>
+        </div>
+
+        </div>
+
+    </div>
+
+    <div class="new-cofees">
+
+        <div class="special-cofee">
+            <h1>OUR SPECIAL COFEE </h1>
+            <div class="special-cardcontainer">
+
+                <div class="special-carditeam"> 
+                    <img src="pexels-viniciusvieirafotografia-22608832.jpg" alt="">
+                    <div class="dicrip-sec">
+                        <p> <b>Lungo cofee</b></p>
+                    <p>bdg</p>
+                    <p>RS.250</p>
+                    </div>
+                    
+                    <div class="specialbtnwrapper">
+                        <div class="special-btn">
+                        <span>add to cart</span>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="special-carditeam"> 
+                    <img src="pexels-valeriya-7474152.jpg" alt="">
+                    <p> <b>Dolgna cofee</b></p>
+                    <p>bdg</p>
+                    <p>RS.250</p>
+                    <div class="specialbtnwrapper">
+                        <div class="special-btn">
+                        <span>add to cart</span>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="special-carditeam"> 
+                    <img src="pexels-tolgaaslanturk-11256666.jpg" alt="">
+                    <p><b>Iced cofee</b></p>
+                    <p>bdg</p>
+                    <p>RS.250</p>
+                    <div class="specialbtnwrapper">
+                          <div class="special-btn">
+                        <span>add to cart</span>
+                    </div>
+                    </div>
+                  
+                </div>
+
+                <div class="special-carditeam"> 
+                    <img src="pexels-ekrulila-2615323 (1).jpg" alt="">
+                    <p><b>Fitter cofee</b></p>
+                    <p>bdg</p>
+                    <p>RS.250</p>
+                    <div class="specialbtnwrapper">
+                        <div class="special-btn">
+                        <span>add to cart</span>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="our-specialdesert">
+             <h1>OUR SPECIAL DESERT</h1>
+
+            <div class="our-speciadesert-cardcontainer">
+           
+
+            <div class="desert-carditeam"> 
+                <img src="pexels-marta-dzedyshko-1042863-2067396.jpg" alt="">
+                <p> <b>Gulab Jamun</b></p>
+                <p>bdg</p>
+                <p>RS.250</p>
+                <div class="specialbtnwrapper">
+                    <div class="special-btn">
+                    <span>add to cart</span>
+                </div>
+                </div>
+                
+            </div>
+
+            <div class="desert-carditeam"> 
+                <img src="pexels-pixabay-372886.jpg" alt="">
+                <p> <b>Chocolate Tiramisu</b></p>
+                <p>bdg</p>
+                <p>RS.250</p>
+                <div class="specialbtnwrapper">
+                    <div class="special-btn">
+                    <span>add to cart</span>
+                </div>
+                </div>
+                
+            </div>
+
+            <div class="desert-carditeam"> 
+                <img src="pexels-marta-dzedyshko-1042863-2067428.jpg" alt="">
+                <p><b>Churros</b></p>
+                <p>bdg</p>
+                <p>RS.250</p>
+                <div class="specialbtnwrapper">
+                    <div class="special-btn">
+                    <span>add to cart</span>
+                </div>
+                </div>
+                
+            </div>
+
+            <div class="desert-carditeam"> 
+                <img src="pexels-helloaesthe-17215880.jpg" alt="">
+                <p> <b>Australian Lamingtons</b></p>
+                <p>bdg</p>
+                <p>RS.250</p>
+                <div class="specialbtnwrapper">
+                    <div class="special-btn">
+                    <span>add to cart</span>
+                </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        </div>
+        
+    </div>
+
+    <div class="cofee-beans"> 
+        <h1>Check out our best <br>
+        cofee betans </h1>
+
+        <div class="beans-btn">
+            <span>Check now</span>
+        </div>
+    </div>
+
+<div class="reviews">
+    <div class="review-one">
+         <h4>come and join</h4>
+    <h1>OUR HAPPY CUSTOMERS</h1>
+    </div>
+   
+
+<div class="reviews-cardcontainer">
+    
+
+    <div class="review-carditeam">
+        <div class="card-img">
+              <img src="Elon_Musk_Colorado_2022_(cropped2).jpg" alt="">
+              <p><b>Elon Reeve Musk</b></p>
+        </div>
+        <p>
+            Elon Reeve Musk (/ˈiːlɒn/; born June 28, 1971)
+             is a businessman and investor known for his key roles 
+             in space company SpaceX and automotive company Tesla,
+              Inc. Other involvements include ownership of X Corp.,
+             formerly Twitter, and his role in the founding of The Boring Company, 
+             xAI, Neuralink and OpenAI. He is one of the wealthiest people in the world;
+              as of June 2024, Forbes estimates his net worth to be US$210 billion.[4]
+
+        </p>
+
+      
+    </div>
+
+    <div class="review-carditeam">
+        <div class="card-img">
+              <img src="Mark_Zuckerberg_F8_2019_Keynote_(32830578717)_(cropped).jpg" alt="">
+              <p>Mark Elliot Zuckerberg</p>
+        </div>
+        <p>
+            Mark Elliot Zuckerberg (/ˈzʌkərbɜːrɡ/; born May 14, 1984)
+             is an American businessman.
+            He co-founded the social media service Facebook,
+            along with his Harvard roommates in 2004, 
+            and its parent company Meta Platforms (formerly Facebook, Inc.),
+            of which he is chairman, chief executive officer and controlling shareholder.
+
+              Zuckerberg briefly attended Harvard University, 
+             where he launched Facebook in February 2004 
+             with his roommates Eduardo Saverin, Andrew McCollum,
+             Dustin Moskovitz and Chris Hughes. Zuckerberg took 
+             the company public in May 2012 with majority shares.
+              In 2008, at age 23, he became the world's youngest self-made billionaire.
+             He has since used his funds to organize multiple donations,
+              including the establishment of the Chan Zuckerberg Initiative.
+        </p>
+
+      
+    </div>
+
+    <div class="review-carditeam">
+        <div class="card-img">
+              <img src="Sam_Altman_CropEdit_James_Tamim.jpg" alt="">
+              <p>Samuel Harris Altman </p>
+        </div>
+        <p>
+            Samuel Harris Altman (born April 22, 1985) is an American entrepreneur and 
+            investor best known as the CEO of OpenAI since 2019 (he was briefly fired and reinstated in November 2023)
+            .[1] He is also the chairman of clean energy companies Oklo Inc. and Helion Energy.
+            [2] Altman is considered to be one of the leading figures of the AI boom.[3][4][5]
+             He dropped out of Stanford University after two years and founded Loopt,
+              a mobile social networking service, raising more than $30 million in venture capital.
+            In 2011, Altman joined Y Combinator, a startup accelerator, and was its president from 2014 to 2019.[6]
+        </p>
+
+      
+    </div>
+</div>
+
+</div>
+
+<div class="footer-section">
+    
+    <div class="footer-wrapper">
+        <div class="foter-logo">
+            <span>COFFEE</span>
+        </div>
+        <div class="footer-col-wrapper">
+            <div class="footer-col">
+                <h2>title</h2>
+                <p>nav 1</p>
+                <p>nav 2</p>
+                <p>nav 3</p>
+            </div>
+            <div class="footer-col">
+                <h2>title</h2>
+                <p>nav 1</p>
+                <p>nav 2</p>
+                <p>nav 3</p>
+            </div>
+            
+            <div class="footer-col">
+                <h2>title</h2>
+                <p>nav 1</p>
+                <p>nav 2</p>
+                <p>nav 3</p>
+            </div>
+            <div class="footer-col">
+                <h2>title</h2>
+                <p>nav 1</p>
+                <p>nav 2</p>
+                <p>nav 3</p>
+            </div>
+            <div class="footer-col">
+                <h2>title</h2>
+                <p>nav 1</p>
+                <p>nav 2</p>
+                <p>nav 3</p>
+            </div>
+            <div class="footer-col">
+                <h2>title</h2>
+                <p>nav 1</p>
+                <p>nav 2</p>
+                <p>nav 3</p>
+            </div>
+        </div>
+
+        
+    
+        <!-- <div class="table"> 
+            <table>
+                <tr>
+                <th>PRIVACY</th>
+                <th>SERVISOUS</th>
+                <th>ABOUT US</th>
+                <th>INFORMATION</th>
+                <th>SOCIAL MEDIA</th>
+                </tr>
+               
+                <tr>
+                    <td>apple</td>
+                    <td>mango</td>
+                    <td>banana</td>
+                    <td>weeds</td>
+                    <td>
+                        <img src="twitter.png" alt="">
+                        <img src="facebook-app-symbol.png" alt="">
+                        <img src="instagram.png" alt="">
+                        <img src="linkedin.png" alt="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>apple</td>
+                    <td>mango</td>
+                    <td>banana</td>
+                    <td>weeds</td>
+                    <td></td>
+                </tr>
+    
+    
+    
+    
+    
+    
+    
+            </table>
+        </div> -->
+
+
+    </div>
+   
+</div>
+
+
+
+
+</body>
+</html>
